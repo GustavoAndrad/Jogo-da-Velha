@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- FUNCIONALIDADES A SE ADICIONAR NO FUTURO
+        1) Seta cruzando quando alguém vancer
+        2) Icones personalizados no :hover
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./estrela.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./jogoDaVelha.js"></script>
+
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div id="main">
+        <p id="titulo">&#11088; JOGO DA VELHA &#11088;</p>
+        <div id="box-conteiner">
+            <div id="box-info">
+                <div id="box-turno">
+                    <p id="turno">&#x1F3B2; VEZ DE: <section id='player'>O</section></p>
+                </div>
+                <div id="box-reset">
+                    <button type="reset" id="refresh" onclick="reset()"  title="Recomeçar jogo">&#x1F504;</button>
+                </div>
+            </div>
+
+            <div id="tralha">
+                <div id='0' class="item" onclick="handleClick(id)"></div>
+                <div id='1' class="item" onclick="handleClick(id)"></div>
+                <div id='2' class="item" onclick="handleClick(id)"></div>
+                <div id='3' class="item" onclick="handleClick(id)"></div>
+                <div id='4' class="item" onclick="handleClick(id)"></div>
+                <div id='5' class="item" onclick="handleClick(id)"></div>
+                <div id='6' class="item" onclick="handleClick(id)"></div>
+                <div id='7' class="item" onclick="handleClick(id)"></div>
+                <div id='8' class="item" onclick="handleClick(id)"></div>
+            </div>
+        </div>
+        
+        <p id="copyright">&#11088; Direitos reservados à @GustavoAndrad &#11088;</p>
+    </div>
+</body>
+</html>
